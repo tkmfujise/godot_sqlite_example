@@ -1,0 +1,5 @@
+# godot-sqlite のラッパー関数を書いたサンプル
+
+リポジトリの解説: https://zenn.dev/tkmfujise/articles/aa965787af91c4
+
+使用アドオン(godot-sqlite): https://github.com/2shady4u/godot-sqlite
