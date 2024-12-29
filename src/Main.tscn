@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxme052qwm3br"]
+
+[ext_resource type="Script" path="res://src/Main.gd" id="1_w35c7"]
+[ext_resource type="Theme" uid="uid://dwwgomqahjqs4" path="res://themes/default_theme.tres" id="2_f1idg"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_w35c7")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PostLabel" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 69.0
+theme = ExtResource("2_f1idg")
+text = "Post"
+
+[node name="CommentLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 333.0
+offset_right = 245.0
+offset_bottom = 402.0
+theme = ExtResource("2_f1idg")
+text = "Comment"
+
+[node name="PostList" type="ItemList" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 58.0
+offset_bottom = 287.0
+grow_horizontal = 2
+theme = ExtResource("2_f1idg")
+
+[node name="CommentList" type="ItemList" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 397.0
+offset_bottom = 649.0
+grow_horizontal = 2
+theme = ExtResource("2_f1idg")
